@@ -3,13 +3,13 @@
     "tests": 2,
     "passes": 0,
     "failures": 2,
-    "duration": 2
+    "duration": 1
   },
   "failures": [
     {
       "title": "Neo4jD3 Unit Tests describe should{}",
       "fullTitle": "Neo4jD3 Unit Tests",
-      "duration": 2,
+      "duration": 1,
       "error": "expected false to be true"
     },
     {

@@ -935,6 +935,10 @@ function Neo4jD3(_selector, _options) {
         return VERSION;
     }
 
+    function destroy() {
+        simulation.on('tick',null);
+    }
+
     function zoomFit(transitionDuration) {
         var bounds = svg.node().getBBox(),
             parent = svg.node().parentElement.parentElement,
@@ -965,6 +969,7 @@ function Neo4jD3(_selector, _options) {
         size: size,
         updateWithD3Data: updateWithD3Data,
         updateWithNeo4jData: updateWithNeo4jData,
+        destroy: destroy,
         version: version
     };
 }
